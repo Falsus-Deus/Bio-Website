@@ -10,7 +10,7 @@
     inset: 0;
     z-index: -1;
     border-radius: 12px; /* matches Discord panel rounding */
-    background-image: url(https://media1.tenor.com/m/1kwhZCeIj1UAAAAd/elden-ring-dark-souls.gif); /* your image */
+    background-image: url(https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3lmN3R1ZXZxaHY0dzhrNXBhaXNqNzhjcG5nOTN6OWd6ZnhoZ2V3dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/zAt1l3fg2cdXKS4kA4/giphy.gif); /* your image */
     background-size: cover;
     background-position: center;
     opacity: 0.85;
@@ -30,7 +30,7 @@
     right: 0; /* stretch across the full row */
     z-index: -1; /* behind avatar, name, and status */
     border-radius: 8px;
-    background-image: url(https://media1.tenor.com/m/1kwhZCeIj1UAAAAd/elden-ring-dark-souls.gif);
+    background-image: url(https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3lmN3R1ZXZxaHY0dzhrNXBhaXNqNzhjcG5nOTN6OWd6ZnhoZ2V3dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/zAt1l3fg2cdXKS4kA4/giphy.gif);
     background-size: cover; /* stretch image to fill row */
     background-position: center;
     opacity: 0.85;
