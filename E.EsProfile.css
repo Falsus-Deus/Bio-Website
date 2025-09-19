@@ -66,4 +66,35 @@ a.link__972a0[data-list-item-id^="private-channels-uid_"]:has(img[src*="11884971
     background-position: center;
     opacity: 0.85;
 }
+/* Server list / members */
+div.childContainer__91a9d:has(img[src*="1209195991396515962"])::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    border-radius: 8px;
+    background-image: url(https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcngxN2w4djVhdGM0cTdpaXc0MTZ6eDEwNGozOGVmd3k4NTh0bWc2bCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XXKMva8YBfYUfQKy9f/giphy.gif); /* your image */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.85;
+}
+
+/* 1:1 DM only, not group chats */
+a.link__972a0[data-list-item-id^="private-channels-uid_"]:has(img[src*="1209195991396515962"])::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    border-radius: 8px;
+    background-image: url(https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcngxN2w4djVhdGM0cTdpaXc0MTZ6eDEwNGozOGVmd3k4NTh0bWc2bCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XXKMva8YBfYUfQKy9f/giphy.gif); /* your image */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.85;
+}
 

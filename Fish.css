@@ -1,27 +1,27 @@
 /* === PERSONAL PROFILE PANEL (full section under avatar + buttons) === */
-.container__37e49:has(img[src*="1188497118055374921"]) {
+.container__37e49:has(img[src*="1209195991396515962"]) {
     position: relative;
     z-index: 0;
 }
 
-.container__37e49:has(img[src*="1188497118055374921"])::before {
+.container__37e49:has(img[src*="1209195991396515962"])::before {
     content: "";
     position: absolute;
     inset: 0;
     z-index: -1;
     border-radius: 12px; /* matches Discord panel rounding */
-    background-image: url(https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3lmN3R1ZXZxaHY0dzhrNXBhaXNqNzhjcG5nOTN6OWd6ZnhoZ2V3dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/zAt1l3fg2cdXKS4kA4/giphy.gif); /* your image */
+    background-image: url(https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcngxN2w4djVhdGM0cTdpaXc0MTZ6eDEwNGozOGVmd3k4NTh0bWc2bCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XXKMva8YBfYUfQKy9f/giphy.gif); /* your image */
     background-size: cover;
     background-position: center;
     opacity: 0.85;
 }
 
 /* Full-width nameplate for specific user in server list */
-.childContainer__91a9d:has(img[src*="1188497118055374921"]) {
+.childContainer__91a9d:has(img[src*="1209195991396515962"]) {
     position: relative; /* parent for absolute pseudo-element */
 }
 
-.childContainer__91a9d:has(img[src*="1188497118055374921"])::before {
+.childContainer__91a9d:has(img[src*="1209195991396515962"])::before {
     content: "";
     position: absolute;
     top: 0;
@@ -30,8 +30,39 @@
     right: 0; /* stretch across the full row */
     z-index: -1; /* behind avatar, name, and status */
     border-radius: 8px;
-    background-image: url(https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3lmN3R1ZXZxaHY0dzhrNXBhaXNqNzhjcG5nOTN6OWd6ZnhoZ2V3dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/zAt1l3fg2cdXKS4kA4/giphy.gif);
+    background-image: url(https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcngxN2w4djVhdGM0cTdpaXc0MTZ6eDEwNGozOGVmd3k4NTh0bWc2bCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XXKMva8YBfYUfQKy9f/giphy.gif);
     background-size: cover; /* stretch image to fill row */
+    background-position: center;
+    opacity: 0.85;
+}
+/* Server list / members */
+div.childContainer__91a9d:has(img[src*="1188497118055374921"])::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    border-radius: 8px;
+    background-image: url(https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3lmN3R1ZXZxaHY0dzhrNXBhaXNqNzhjcG5nOTN6OWd6ZnhoZ2V3dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/zAt1l3fg2cdXKS4kA4/giphy.gif); /* your image */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.85;
+}
+
+/* 1:1 DM only, not group chats */
+a.link__972a0[data-list-item-id^="private-channels-uid_"]:has(img[src*="1188497118055374921"])::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    border-radius: 8px;
+    background-image: url(https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3lmN3R1ZXZxaHY0dzhrNXBhaXNqNzhjcG5nOTN6OWd6ZnhoZ2V3dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/zAt1l3fg2cdXKS4kA4/giphy.gif); /* your image */
+    background-size: cover;
     background-position: center;
     opacity: 0.85;
 }
@@ -53,37 +84,6 @@ div.childContainer__91a9d:has(img[src*="1060623034731483236"])::before {
 
 /* 1:1 DM only, not group chats */
 a.link__972a0[data-list-item-id^="private-channels-uid_"]:has(img[src*="1060623034731483236"])::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: -1;
-    border-radius: 8px;
-    background-image: url(https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExaGYybzExcjZ5a2lrZzIzYWhwcTcwaGNyeDNwczE0eGtsN3FjeGNzMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/uI3stIDohgbtHnusfR/giphy.gif); /* your image */
-    background-size: cover;
-    background-position: center;
-    opacity: 0.85;
-}
-/* Server list / members */
-div.childContainer__91a9d:has(img[src*="1209195991396515962"])::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: -1;
-    border-radius: 8px;
-    background-image: url(https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExaGYybzExcjZ5a2lrZzIzYWhwcTcwaGNyeDNwczE0eGtsN3FjeGNzMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/uI3stIDohgbtHnusfR/giphy.gif); /* your image */
-    background-size: cover;
-    background-position: center;
-    opacity: 0.85;
-}
-
-/* 1:1 DM only, not group chats */
-a.link__972a0[data-list-item-id^="private-channels-uid_"]:has(img[src*="1209195991396515962"])::before {
     content: "";
     position: absolute;
     top: 0;
