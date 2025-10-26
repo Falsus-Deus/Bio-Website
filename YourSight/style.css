@@ -35,7 +35,7 @@ nav {
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #cb298d; /* Akzent for logo text */
+    color: #FFFFFF; /* Akzent for logo text */
     display: flex;
     align-items: center;
     gap: 10px; /* Space between image and text */
