@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preise - YourSight</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="ads.png" alt="YourSight Logo" class="logo-image">
+                YourSight
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="preise.html" class="active">Preise</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Unsere Preise</h1>
+            <p>Transparente Kosten für maßgeschneiderte Lösungen.</p>
+        </section>
+
+        <section class="content">
+            <h2>Was kostet unsere Dienstleistung?</h2>
+            <p>
+                Die Kosten hängen von Ihren individuellen Anforderungen ab, wie z. B. dem Design der Website
+                und der Kapazität des Servers (z. B. wie viele Nutzer gleichzeitig zugreifen können). Der
+                Einstiegspreis liegt bei <strong>4.000 €</strong>. Im Gegensatz zur Konkurrenz zahlen Sie bei uns
+                nur einmal – keine monatlichen Gebühren oder Gewinnanteile.
+            </p>
+            <div class="pricing-selector" style="text-align: center">
+                <label for="package-select" >Wählen Sie Ihr Paket:</label>
+                <select id="package-select" name="package">
+                    <option value="basic">Basic Package</option>
+                    <option value="standard">Standard Package</option>
+                    <option value="premium">Premium Package</option>
+                </select>
+                <div id="package-details" class="package-details">
+                    <!-- Default content (Basic Package) -->
+                    <h3 id="package-price">4.000 €</h3>
+                    <img id="package-image" src="option1.png" alt="Basic Package" class="content-image">
+                    <p id="package-description">
+                        Ideal für kleine Unternehmen, die eine einfache Website mit grundlegender Serverkapazität benötigen.
+                    </p>
+                </div>
+            </div>
+            <img src="placeholder.jpg" alt="Platzhalter für Preistabelle" class="content-image">
+        </section>
+
+        <section class="content">
+            <h2>Langfristig günstiger als die Konkurrenz</h2>
+            <p>
+                Im Vergleich zu Anbietern wie Squarespace, die monatliche Gebühren (z. B. 100 €) und
+                12–15 % Ihres Gewinns verlangen, bieten wir eine einmalige Zahlung. Kurzfristig mag dies höher
+                erscheinen, aber langfristig sparen Sie deutlich.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 YourSight. Alle Rechte vorbehalten.</p>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Dropdown menu logic
+        const packageSelect = document.getElementById('package-select');
+        const packagePrice = document.getElementById('package-price');
+        const packageImage = document.getElementById('package-image');
+        const packageDescription = document.getElementById('package-description');
+
+        const packages = {
+            basic: {
+                price: '4.000 €',
+                image: 'option1.png',
+                description: 'Ideal für kleine Unternehmen, die eine einfache Website mit grundlegender Serverkapazität benötigen.',
+                alt: 'Basic Package'
+            },
+            standard: {
+                price: '12.500 €',
+                image: 'option2.png',
+                description: 'Perfekt für mittelgroße Unternehmen mit moderatem Traffic und erweiterten Funktionen.',
+                alt: 'Standard Package'
+            },
+            premium: {
+                price: '25.000 €',
+                image: 'option3.png',
+                description: 'Entwickelt für stark frequentierte Websites mit individuellen Designs und robuster Serverleistung.',
+                alt: 'Premium Package'
+            }
+        };
+
+        packageSelect.addEventListener('change', () => {
+            const selectedPackage = packageSelect.value;
+            const pkg = packages[selectedPackage];
+            packagePrice.textContent = pkg.price;
+            packageImage.src = pkg.image;
+            packageImage.alt = pkg.alt;
+            packageDescription.textContent = pkg.description;
+        });
+    </script>
+</body>
+</html>

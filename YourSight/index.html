@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YourSight - Ihre maßgeschneiderte Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="ads.png" alt="YourSight Logo" class="logo-image"> <!-- Added image before logo text -->
+                YourSight
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Startseite</a></li>
+                <li><a href="preise.html">Preise</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Ihre Website, Ihre Vision – Wir machen es möglich!</h1>
+            <p>Maßgeschneiderte Websites und vorinstallierte Server für Ihr Unternehmen.</p>
+            <a href="kontakt.html" class="cta-button">Jetzt Kontakt aufnehmen</a>
+        </section>
+
+        <section class="content business-idea">
+            <h2>Unsere Geschäftsidee</h2>
+            <p>
+                Jede große Firma braucht eine Website – sei es zur Präsentation, für Details oder Werbung.
+                Doch oft müssen Unternehmen Software, Hardware und Dienstleistungen von verschiedenen Anbietern
+                separat erwerben. Das ist zeitaufwändig und kompliziert. Bei <strong>YourSight</strong> vereinen wir
+                den gesamten Prozess: Sie beschreiben Ihre Idee, wir erstellen eine Vorschau, und nach Ihrer Freigabe
+                liefern wir eine vollständige Website mit vorinstalliertem Server, direkt zu Ihnen.
+            </p>
+            <img src="placeholder.jpg" alt="Platzhalter für Website-Vorschau" class="content-image">
+        </section>
+
+        <section class="content customers">
+            <h2>Wer sind unsere Kunden?</h2>
+            <p>
+                Unsere Dienstleistungen richten sich an kleine und mittelgroße Unternehmen, die eine professionelle
+                Website benötigen – egal ob für Verkauf, Dienstleistungen oder Informationsverbreitung.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 YourSight. Alle Rechte vorbehalten.</p>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
